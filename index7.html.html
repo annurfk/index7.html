@@ -2,18 +2,20 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width-device-width" initial-scale="1.0"/>
+        <meta name="viewport" content="wpopobhidth-device-width" initial-scale="1.0"/>
         <title>KANYAKUMARI : VIVEKANADA ROCK</title>
         <style>
         body{
             background-color: black ;
          }
          .navbar{
-            background-color: #80d4ff;
+            background-color: #7dd2fc;
+            border: 2px solid white;
             height:60px;
             font-size: 50px;
             padding: 20px;
            text-align: center;
+           flex-direction: row;
          }
          .main-heading{
             border: 2px solid white;
@@ -29,20 +31,37 @@
            padding: 20px;
            margin: 10px;
         }
-       .hover{
-         width: 300px;
-         display: inline flex;
+        .head-container{
+         display: flex;
          position: relative;
-       }
-       .hover1{
-         width: 200px;
-        display: inline flex;
-        position: relative;
-       }
-       .hover2{
+         justify-content: space-evenly;
+        }
+        .head-container:hover{
+         display:  flex;
+         position: relative;
+        }
+       .box-hover{
          width: auto;
-         display: inline flex;
-         position: relative ;
+         padding: 10px;
+         border: 2px solid white;
+         margin: 10px;
+         justify-content: space-evenly;
+         width: auto;
+        display: flex;
+       }
+      .hover-box-container{
+       display: flex;
+       border: 2px solid white;
+      top: -5px;
+      right: 20px;
+      }
+       .hover2-box{
+       border: 2px solid ;
+      width: 200px;
+      display: flex;
+      position: relative;
+       flex-direction: row;
+       width: auto;
        }
         .box{
            color: white;
@@ -55,7 +74,7 @@
            padding: 10px;
         }
         .con{
-        height: 300px;
+        height: 100px;
         margin-bottom: auto;
         }
         .box-container{
@@ -80,7 +99,7 @@
          color: #fff;
         }
         .place{
-        color: rgb(73, 182, 225);
+        color: rgb(24, 86, 111);
         font-size: 20px;
         display: flex;
         width: 300px;
@@ -100,6 +119,7 @@
          background-color: rgb(185, 141, 86);
          display: flex;
          width: auto;
+         border: 2px solid white;
        }
        .place-name{
          text-align: left;
@@ -107,7 +127,7 @@
          font-size: 20px;
        }
        .h2-box{
-         width: 130px;
+         width: 200px;
          background-color: rgb(149, 247, 214);
          flex: content;
          display: flex;
@@ -143,6 +163,7 @@
          border: #fff;
          display:inline flex;
          width: auto;
+         border: 2px solid white;
         }
       .jpg-cards{
        width: 270px;
@@ -162,13 +183,13 @@
          color: gold;
       }
       .jpg-box{
-         background-color: rgb(229, 183, 118);
+         background-color: rgb(83, 56, 17);
          border: #e35d5d;
          display: inline flex;
          width: auto;
       }
-      .Topnav{
-     border: 2px solid white;    
+   .Topnav{
+    border: 2px solid white;    
     text-align: center;
     background-color: rgb(40, 3, 17);
     padding: 16px;
@@ -177,54 +198,128 @@
 
 }
 .link{
-    float: left;
+    float: center;
     color: wheat;
-    text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
     font-size: 30px;
+    
 }
-.logo{
+.login{
    float: left;
-   width: 50px;
+   width: 80px;
    display: inline flex;
+   border: 2px solid black;
 }
-.map{
-height: 50px;
-background-color:rgb(114, 195, 236);
-border: 2px solid gold;
-padding: 10px;
-text-align: center;
-font-size: 30px;
+.login-btn:hover{
+   background-color: #eff259;
+   color: rgb(228, 234, 69);
+   margin-left: px;
+   padding: 12px;
 }
-@media screen and (max-width: 600px){
-   
+@media screen and (max-width: 500px){
+   .navbar{
+       height: 40px;
+       display: flex;
+   }
+   .main-heading{
+       padding-left: 10px;
+       height: 50px;
+       position: relative;
+       bottom: 0px;
+   }
+   .name{
+       font-size: 30px;
+       padding-bottom: 0px;
+       margin-top: 2px;
+   }
+   .head-container{
+       font-size: 15px;
+       margin-left: 10px;
+   }
+   .head-container{
+         display: flex;
+         position: relative;
+         justify-content: space-evenly;
+        }
+        .head-container:hover{
+         display:  flex;
+         position: relative;
+        }
+       .box-hover{
+         width: auto;
+         padding: 10px;
+         margin: 10px;
+         justify-content: space-evenly;
+         width: auto;
+        display: flex;
+       }
+       .food{
+        display: flex;
+        padding: 20px;
+        border-radius: 20px;
+        flex-direction: row;
+       }  
+}
+
+.footer{
+   border: 2px solid gold;
+    background: white;
+    border-radius: 30px;
+    height: 360px;
+    padding: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer-img{
+    height: 150px;
+    height: 250px;
+    position: relative;
+    top: 25px;
+    bottom: 20px;
+    right: 30px;
+}
+.input{
+    border-radius: 20px;
+    background-color: #fff;
+    color: #000;
+}
+.h1{
+    margin-top: -50px;
+}
+.button{
+    border-radius: 10px;
 }
         </style>
     </head>
     <body>
-    <nav class="navbar">INDIAL PARADISE</nav>
+    <nav class="navbar">INDIAN PARADISE</nav>
 
     <h1 class="main-heading">VIVEKANANDA ROCK MEMORIAL, KANYAKUMARI : </h1>
 
     <h2 class="name">Kanyakumari View :</h2>
     
-    <div class="head-container">
-    <div class="hover">
+   <div class="box-hover">
       <img src="vivekanand rock.jpg"/>
     </div>
-    <div class="hover1">
+
+    <div class="hover-box-container">
+   <div class="hover2-box">
       <img src="thiruvalluvar1.jpeg"/>
     </div>
-    <div class="hover1">
-      <img src="beautiful view.jpeg"/>
+
+    <div class="hover2-box">
+      <img src="beautiful view.jpeg" />
     </div>
-    <div class="hover2">
-      <img src="place.jpeg"/>
+
+    <div class="hover2-box">
+      <img src="place.jpeg" width="350px"/>
     </div>
-    <div class="hover2">
-      <img src="k1.jpeg"/>
+
     </div>
+
    </div>
 
     </div>
@@ -275,7 +370,7 @@ font-size: 30px;
    
 </div>
 
-   <h2 class="headings "align="middle">Healthy & testy food...😇😋</h2>
+   <h2 class="headings "align="middle">Don't give a miss to this food when in Kanyakumari.😇</h2>
 <div class="food-box">
    <div class="food">
    
@@ -330,24 +425,56 @@ font-size: 30px;
    </div>
    
    </div><br>
-   <br>
+  <br>
       <div class="Topnav">
          
-         <a href="home.html"      class="link">Home </a>  
+         <a href="#home.html"      class="link">Home </a>  
          <a href="#news.html"     class="link" >News</a>
          <a href="#contact.html"  class="link">Contact</a>
          <a href="#about.html"    class="link">About</a>
          <footer class="href">
-         <div class="logo"><img src="travel logo.jpg" width="50px" />
-            <button>
-               <a href="login.html">Travel login form.html</a>
-            </button>
+
       </div> </footer>
+     
    </div><br>
   
 </div>
+<div class="footer">
+   <div class="f-column">
+       <img src="travel logo.jpg" class="footer-img" >
+       <h2>Indian Paradise</h2>
+       <h2 class="h1">
+           Indian Paradise
+       </h2>
+       
+       <h4>Support</h4>
+       <h4>Profile</h4>
 
    </div>
-</div>
-</body>
+   <div class="t-column">
+   <div class="s-column">
+       <h4>Find an adventure</h4>
+       <h4>Buitd custom trip</h4>
+       <h4>My list</h4>
+       <h4>Submit a story</h4>
+
+   </div class="fourth-column">
+   <div>
+   </div>
+   <div class="s-column">
+       <h4>Get updates</h4>
+       <form>
+           <br /><br />
+           <div class="login">
+            <button class="login-btn">
+               <a href="login.html">Travel login form.html</a>
+            </button>
+       </form>
+
+       </div></div>
+
+</div><button class="btn">MAP - : </button> 
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15249822.21961233!2d82.75252935!3d21.068622799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1697714373266!5m2!1sen!2sin" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
 </html>
